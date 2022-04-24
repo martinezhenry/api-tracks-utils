@@ -1,0 +1,12 @@
+
+
+version: v1
+
+config:
+  uri-track-base: "${version}/track/"
+  uri-track-save: "{isrc}"
+  uri-spotify-base: "https://api.spotify.com/"
+  uri-spotify-base-token: "https://accounts.spotify.com/"
+  uri-search: "v1/search?q={query}&type={track}&limit=1"
+
+
