@@ -8,11 +8,13 @@ public interface AppConstants {
 
     String URI_TRACK_BASE = "${config.uri-track-base}";
     String URI_TRACK_SAVE = "${config.uri-track-save}";
+    String URI_TRACK_GET = "${config.uri-track-get}";
 
     String EMPTY = "";
     String CONCAT_SYMBOL = "+";
-    String AND_PARAM_CHARACTER = "&";
-    String QUERY_PARAM = "q";
+    String SEARCH_TYPE_PARAM = "type";
+    String SEARCH_QUERY_PARAM = "q";
+    String NOT_TRACK_FOUND_MSG_DEFAULT = "track not found for the isrc specified";
 
     enum FilterErrors {
         ARTIST_MESSAGE("artist filter only can be used for searching type albums, artists, or tracks"),

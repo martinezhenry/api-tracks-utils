@@ -1,12 +1,42 @@
 
 
+# Spring configuration
+spring:
+  webflux:
+    base-path: /track-utils/${version}/
+  application:
+    name: @project.artifactId@
+    version: @project.version@
+  data:
+    mongodb:
+      host: ${DB_MONGO_HOST}
+      port: ${DB_MONGO_PORT}
+      username: ${DB_MONGO_USER}
+      password: ${DB_MONGO_PASS}
+      database: track-utils
+      authentication-database: ${DB_MONGO_AUTH:admin}
+
+
 version: v1
 
+logging:
+  level:
+    com:
+      hvs:
+        api: DEBUG
+
 config:
-  uri-track-base: "${version}/track/"
+  request-timeout: 5000
+  uri-track-base: "track/"
   uri-track-save: "{isrc}"
+  uri-track-get: "{isrc}"
   uri-spotify-base: "https://api.spotify.com/"
+  uri-spotify-search: "v1/search"
   uri-spotify-base-token: "https://accounts.spotify.com/"
-  uri-search: "v1/search?q={query}&type={track}&limit=1"
+  uri-spotify-token: "api/token"
+  encoded-credentials: ${SPOTIFY_CREDENTIALS}
+
+
+
 
 

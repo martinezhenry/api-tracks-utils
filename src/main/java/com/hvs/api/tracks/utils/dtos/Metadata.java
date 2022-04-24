@@ -8,7 +8,7 @@ import lombok.Data;
 public class Metadata {
 
     private String name;
-    private Integer durationMs;
-    private Boolean explicit;
+    private long durationMs;
+    private boolean explicit;
 
 }

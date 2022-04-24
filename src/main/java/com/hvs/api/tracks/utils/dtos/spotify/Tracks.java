@@ -17,18 +17,18 @@ public class Tracks {
     private List<Item> items = null;
     @SerializedName("limit")
     @Expose
-    private Integer limit;
+    private int limit;
     @SerializedName("next")
     @Expose
     private String next;
     @SerializedName("offset")
     @Expose
-    private Integer offset;
+    private int offset;
     @SerializedName("previous")
     @Expose
     private String previous;
     @SerializedName("total")
     @Expose
-    private Integer total;
+    private int total;
 
 }

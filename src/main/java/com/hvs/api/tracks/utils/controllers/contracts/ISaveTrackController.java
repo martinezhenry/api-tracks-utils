@@ -8,6 +8,7 @@ import javax.validation.Valid;
 
 public interface ISaveTrackController {
 
-    Mono<TrackData> saveTrack(@Valid @PathVariable String isrc);
+    Mono<TrackData> save(@Valid @PathVariable String isrc);
+    Mono<TrackData> get(@Valid @PathVariable String isrc);
 
 }

@@ -41,7 +41,7 @@ public class Album {
     private String releaseDatePrecision;
     @SerializedName("total_tracks")
     @Expose
-    private Integer totalTracks;
+    private int totalTracks;
     @SerializedName("type")
     @Expose
     private String type;

@@ -6,7 +6,6 @@ import com.hvs.api.tracks.utils.components.enums.ItemType;
 import com.hvs.api.tracks.utils.components.enums.ValidationResult;
 import com.hvs.api.tracks.utils.dtos.Filter;
 import com.hvs.api.tracks.utils.dtos.FilterValidationResult;
-import lombok.extern.log4j.Log4j2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
